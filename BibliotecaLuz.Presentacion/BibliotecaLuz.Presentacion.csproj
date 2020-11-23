@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD105C7B-3D6C-44CC-B35F-23A9A15C95D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BibliotecaLuz.Presentacion</RootNamespace>
+    <AssemblyName>BibliotecaLuz.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutorForm.Designer.cs">
+      <DependentUpon>AutorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutorAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutorAEForm.Designer.cs">
+      <DependentUpon>AutorAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorialesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorialesForm.Designer.cs">
+      <DependentUpon>EditorialesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorialesAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorialesAEForm.Designer.cs">
+      <DependentUpon>EditorialesAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaisForm.Designer.cs">
+      <DependentUpon>PaisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrosForm.Designer.cs">
+      <DependentUpon>LibrosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalidadesAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalidadesAEForm.Designer.cs">
+      <DependentUpon>LocalidadesAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerosForm.Designer.cs">
+      <DependentUpon>GenerosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerosAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerosAEForm.Designer.cs">
+      <DependentUpon>GenerosAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaisAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaisAEForm.Designer.cs">
+      <DependentUpon>PaisAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocioAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocioAEForm.Designer.cs">
+      <DependentUpon>SocioAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoDeDocAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoDeDocAEForm.Designer.cs">
+      <DependentUpon>TipoDeDocAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoDeDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoDeDocForm.Designer.cs">
+      <DependentUpon>TipoDeDocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvinciasAEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvinciasAEForm.Designer.cs">
+      <DependentUpon>ProvinciasAEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LocalidadesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalidadesForm.Designer.cs">
+      <DependentUpon>LocalidadesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvinciasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvinciasForm.Designer.cs">
+      <DependentUpon>ProvinciasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SociosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SociosForm.Designer.cs">
+      <DependentUpon>SociosForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutorForm.resx">
+      <DependentUpon>AutorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutorAEForm.resx">
+      <DependentUpon>AutorAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorialesForm.resx">
+      <DependentUpon>EditorialesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorialesAEForm.resx">
+      <DependentUpon>EditorialesAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaisForm.resx">
+      <DependentUpon>PaisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrosForm.resx">
+      <DependentUpon>LibrosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalidadesAEForm.resx">
+      <DependentUpon>LocalidadesAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerosForm.resx">
+      <DependentUpon>GenerosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerosAEForm.resx">
+      <DependentUpon>GenerosAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaisAEForm.resx">
+      <DependentUpon>PaisAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocioAEForm.resx">
+      <DependentUpon>SocioAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoDeDocAEForm.resx">
+      <DependentUpon>TipoDeDocAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoDeDocForm.resx">
+      <DependentUpon>TipoDeDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvinciasAEForm.resx">
+      <DependentUpon>ProvinciasAEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="LocalidadesForm.resx">
+      <DependentUpon>LocalidadesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvinciasForm.resx">
+      <DependentUpon>ProvinciasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SociosForm.resx">
+      <DependentUpon>SociosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaLuz.Entidades\BibliotecaLuz.Entidades.csproj">
+      <Project>{509644b0-8e78-481c-8eaf-7f0a313ac58f}</Project>
+      <Name>BibliotecaLuz.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BibliotecaLuz.Servicios\BibliotecaLuz.Servicios.csproj">
+      <Project>{a41e1e6d-f147-458d-ad5f-cd806a99e40b}</Project>
+      <Name>BibliotecaLuz.Servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libros_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\socios_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prestamos_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
